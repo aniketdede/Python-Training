@@ -1,0 +1,11 @@
+import turtle
+turtle.bgcolor("black")
+turtle.pencolor("yellow")
+turtle.fd(160)
+turtle.left(90)
+turtle.fd(70)
+turtle.left(90)
+turtle.fd(160)
+turtle.left(90)
+turtle.fd(70)
+turtle.done()

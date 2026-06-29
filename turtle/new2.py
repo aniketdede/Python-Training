@@ -1,0 +1,15 @@
+import turtle
+turtle.bgcolor("black")
+turtle.pencolor("blue")
+turtle.forward(160)
+turtle.left(90)
+turtle.forward(160)
+turtle.left(90)
+turtle.forward(160)
+turtle.left(90)
+turtle.forward(160)
+turtle.left(135)
+turtle.forward(226)
+
+turtle.color("blue","orange")
+turtle.done()

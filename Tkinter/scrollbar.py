@@ -1,0 +1,17 @@
+import tkinter
+from tkinter import *
+
+root = tkinter.Tk()
+
+scrollbar = Scrollbar(root)
+scrollbar.pack(side=RIGHT, fill=Y)
+
+mylist = Listbox(root, yscrollcommand=scrollbar.set)
+mylist.pack(side=LEFT, fill=BOTH)
+
+for line in range(100):
+    mylist.insert(END, "This is line number " + str(line))
+
+
+scrollbar.config(command=mylist.yview)    
+mainloop() 
