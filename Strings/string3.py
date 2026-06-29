@@ -1,6 +1,9 @@
-# STRING MANIPULATION - using string methods
+'''# STRING MANIPULATION - using string methods
 
 # 1) center(): put the text in the middle and fill the extra space with a character
+from collections import deque
+
+
 text = "easy"
 print("original string:", text)
 print("centered string:", text.center(10, "@"))
@@ -64,6 +67,103 @@ print(str3.isidentifier())
 print(str4.isidentifier())
 print(str5.isidentifier())
 
-# function to check if a number is even or odd
 
+
+ #lists
  
+my_list = [8,1,0,8,6,5,9]
+my_list.sort()
+print(my_list)
+print(my_list.index(8))
+a=my_list.count(8)
+print(a)
+my_list.reverse()
+print(my_list)
+ 
+
+#stack
+
+
+stack = [3,4,5]
+stack.append(8)
+stack.append(0)
+print(stack)
+x=stack.pop()
+print(x)
+
+
+
+# queue
+
+queue = deque(["yash", "krishna","sahil", "shivtej"])
+queue.append("swati")
+queue.append("xyz")
+print(queue)
+a=queue.pop()
+print(a)
+
+
+#TOUPLE
+
+my_touple=()
+print(my_touple)
+
+my_touple=(4,5,8,9)
+print(my_touple)
+
+
+my_touple=(4,"python",3.31)
+print(my_touple)  
+
+my_tuple=['p','e','w','i','t']
+print(my_tuple[1])
+print(my_tuple[2])
+print(my_tuple[-1])
+print(my_tuple[-4])
+
+
+n_touple=('mouse',[2,4,9,0],(52,65,85))
+print(n_touple[0][3])
+print(n_touple[0][1])
+'''
+
+
+from os import remove
+
+
+my_set = {4,5,8,0}
+print(my_set)
+my_set.add(2)
+print(my_set)
+my_set.update([45,6,9,44])
+print(my_set)
+x = my_set.union({50,60,80,90})
+print(x)
+
+x.remove(80)
+print(x)
+
+
+
+setA = {4,5,6,7}
+setB ={8,9,10,6}
+if setA&setB == set():
+  print("true")
+else :
+ print("false")
+ 
+ 
+print("union:",setA|setB) 
+
+
+
+#dictionary
+
+student = {
+    "name": "Aniket",
+    "age": 20,
+    "courses": ["math", "science"]
+}
+print(student.pop("courses"))
+print(student)
+print(student.popitem())
