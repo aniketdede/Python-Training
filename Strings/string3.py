@@ -1,4 +1,4 @@
-'''# STRING MANIPULATION - using string methods
+# STRING MANIPULATION - using string methods
 
 # 1) center(): put the text in the middle and fill the extra space with a character
 from collections import deque
@@ -125,7 +125,7 @@ print(my_tuple[-4])
 n_touple=('mouse',[2,4,9,0],(52,65,85))
 print(n_touple[0][3])
 print(n_touple[0][1])
-'''
+
 
 
 from os import remove
